@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <HBox spacing="10" padding="10">
+         <Label text="Titre:"/>
+         <TextField fx:id="titreField"/>
+         <Label text="Auteur:"/>
+         <TextField fx:id="auteurField"/>
+         <Button fx:id="addButton" text="Ajouter"/>
+         <Button fx:id="listButton" text="Lister"/>
+      </HBox>
+   </top>
+   <center>
+      <TableView fx:id="tableView">
+         <columns>
+            <TableColumn fx:id="idColumn" text="ID"/>
+            <TableColumn fx:id="titreColumn" text="Titre"/>
+            <TableColumn fx:id="auteurColumn" text="Auteur"/>
+         </columns>
+      </TableView>
+   </center>
+</BorderPane>
